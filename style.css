@@ -40,3 +40,10 @@ footer {
   right: 20px;
   z-index: 1000;
 }
+.zoom {
+  transition: transform 0.5s ease;
+}
+.zoom:hover {
+  transform: scale(1.05);
+  z-index: 1000;
+}
