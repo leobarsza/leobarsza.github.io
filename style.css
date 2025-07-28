@@ -1,0 +1,42 @@
+body {
+  scroll-behavior: smooth;
+  transition: background-color 0.3s, color 0.3s;
+}
+section {
+  padding: 80px 0;
+}
+.hero {
+  background-color: var(--bs-primary);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero h1 {
+  font-size: 3rem;
+}
+.skills i {
+  font-size: 2rem;
+  margin: 10px;
+}
+footer {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  text-align: center;
+}
+.dark-mode {
+  background-color: #121212 !important;
+  color: #e4e4e4 !important;
+}
+.dark-mode .hero {
+  background-color: #1f1f1f !important;
+}
+.dark-mode footer {
+  background-color: #1f1f1f !important;
+  color: #e4e4e4;
+}
+.toggle-dark {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}

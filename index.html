@@ -12,35 +12,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
       rel="stylesheet"
     />
-    <style>
-      body {
-        scroll-behavior: smooth;
-      }
-      section {
-        padding: 80px 0;
-      }
-      .hero {
-        background-color: #0d6efd;
-        color: white;
-        text-align: center;
-        padding: 100px 20px;
-      }
-      .hero h1 {
-        font-size: 3rem;
-      }
-      .skills i {
-        font-size: 2rem;
-        margin: 10px;
-      }
-      footer {
-        background-color: #f8f9fa;
-        padding: 40px 0;
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Hero -->
+    <button class="btn btn-light toggle-dark" onclick="toggleDarkMode()">
+      🌙
+    </button>
+
     <header class="hero">
       <h1>Leonardo Souza</h1>
       <p class="lead">
@@ -51,20 +29,16 @@
       </div>
     </header>
 
-    <!-- Sobre -->
     <section id="sobre">
       <div class="container">
         <h2 class="text-center mb-4">Sobre mim</h2>
         <p class="text-center">
           Estudante de Ciência da Computação com experiência prática em sistemas
-          web, APIs, automações e integração de dados. Já atuei em projetos com
-          foco em otimização de tempo, como CRMs personalizados e assistentes
-          baseados em IA para o setor financeiro.
+          web, APIs, automações e integração de dados.
         </p>
       </div>
     </section>
 
-    <!-- Habilidades -->
     <section id="habilidades" class="bg-light">
       <div class="container">
         <h2 class="text-center mb-5">Habilidades Técnicas</h2>
@@ -105,7 +79,6 @@
       </div>
     </section>
 
-    <!-- Projetos -->
     <section id="projetos">
       <div class="container">
         <h2 class="text-center mb-5">Projetos em Destaque</h2>
@@ -115,9 +88,8 @@
               <div class="card-body">
                 <h5 class="card-title">CRM Personalizado</h5>
                 <p class="card-text">
-                  Sistema desenvolvido para agilizar a captação de clientes e
-                  simulações. Reduziu o tempo médio de atendimento de 30 minutos
-                  para menos de 5 minutos.
+                  Sistema para otimizar a captação de clientes. Atendimento
+                  reduzido de 30min para menos de 5min.
                 </p>
               </div>
             </div>
@@ -127,9 +99,8 @@
               <div class="card-body">
                 <h5 class="card-title">Chatbot com GPT e n8n</h5>
                 <p class="card-text">
-                  Assistente inteligente com integração ao WhatsApp, oferecendo
-                  propostas de crédito de forma automatizada para aposentados e
-                  pensionistas do INSS.
+                  Assistente com IA integrada ao WhatsApp para ofertas de
+                  crédito automatizadas.
                 </p>
               </div>
             </div>
@@ -138,13 +109,11 @@
       </div>
     </section>
 
-    <!-- Contato -->
     <section id="contato" class="bg-light">
       <div class="container">
         <h2 class="text-center mb-4">Entre em Contato</h2>
         <p class="text-center">
-          Estou disponível para colaborações, freelas ou oportunidades em
-          tecnologia. Me envie uma mensagem!
+          Aberto para freelas e oportunidades. Vamos conversar!
         </p>
         <div class="d-flex justify-content-center gap-4 mt-4">
           <a
@@ -168,11 +137,11 @@
       </div>
     </section>
 
-    <!-- Footer -->
     <footer>
       <p>&copy; 2025 Leonardo Souza | Desenvolvedor Full Stack</p>
     </footer>
 
+    <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
